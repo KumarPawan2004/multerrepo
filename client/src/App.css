@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+/* Container - Flexbox Centering */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; /* Full viewport height */
+  padding: 20px;
+}
+
+/* Upload Card */
+.upload-card {
+  background: white;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Heading and Text */
+.upload-card h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.upload-card p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* File Input */
+.file-input {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  border: 2px dashed #aaa;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: border 0.3s;
+  width: 100%;
+}
+
+.file-input:hover {
+  border-color: #4f46e5;
+}
+
+/* Button */
+.upload-button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.upload-button:hover {
+  background-color: #3730a3;
+}
+
+.upload-button:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+
+/* Message */
+.message {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #1d4ed8;
+}
